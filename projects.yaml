@@ -1,0 +1,5 @@
+projects:
+  VCP:
+  - project.yaml
+settings:
+  export_dir: .
