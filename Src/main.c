@@ -96,6 +96,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    HAL_Delay(500);
+    VCPSend((uint8_t*)"HELLO\r\n", 7);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
