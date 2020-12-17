@@ -51,6 +51,8 @@ tool_specific:
     sources:
       StartUp:
       - IDE/MDK-ARM
+      RTThread:
+      - Libraries/rt-thread/libcpu/arm/cortex-m3/context_rvds.S  
     linker_file:
     - IDE/MDK-ARM/VCP.sct
   iar_arm:
@@ -60,6 +62,8 @@ tool_specific:
     sources:
       StartUp:
       - IDE/EWARM
+      RTThread:
+      - Libraries/rt-thread/libcpu/arm/cortex-m3/context_iar.S
     linker_file:
     - IDE/EWARM/stm32f103xb_flash.icf
   make_gcc_arm:
@@ -69,6 +73,8 @@ tool_specific:
     sources:
       StartUp:
       - IDE/GCC/startup_stm32f103xb.s
+      RTThread:
+      - Libraries/rt-thread/libcpu/arm/cortex-m3/context_gcc.S
     linker_file:
     - IDE/GCC/STM32F103RBTx_FLASH.ld
     misc:
