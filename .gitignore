@@ -1,3 +1,4 @@
 EWARM/*
 MDK-ARM/*
 Makefile
+generate_project/*
